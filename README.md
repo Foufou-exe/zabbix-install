@@ -40,7 +40,7 @@ Finally you can run the script :
 ```BASH
 ./Zabbix_install.sh
 ````
-And that's the end of it, normally everything is functional, you just need to configure and install what you want with the install.sh script 😎
+And that's the end of it, normally everything is functional 😁
 
 ## Support
 
