@@ -38,7 +38,7 @@ chmod a+x Zabbix_install.sh
 Finally you can run the script :
 
 ```BASH
-./install.sh
+./Zabbix_install.sh
 ````
 And that's the end of it, normally everything is functional, you just need to configure and install what you want with the install.sh script 😎
 
