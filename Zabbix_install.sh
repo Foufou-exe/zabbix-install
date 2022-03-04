@@ -9,7 +9,7 @@ function install-packages-zabbix() { #  install packages zabbix function: It aim
     apt update -y && apt upgrade -y
     read -p "What version of Zabbix do you want to have ?(X.X):" version
     wget https://repo.zabbix.com/zabbix/${version}/debian/pool/main/z/zabbix-release/zabbix-release_${version}-1+debian${version_os}_all.deb
-    dpkg -i zabbix-release_5.4-1+debian11_all.deb
+    dpkg -i zabbix-release_${version}+debian${version_os}_all.deb
     apt update
     apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent -y
 }
