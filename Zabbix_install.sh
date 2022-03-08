@@ -3,8 +3,9 @@
 #<---------- Declaration of Functions ---------->
 
 function install-packages-zabbix() { #  install packages zabbix function: It aims to gather all packages and install them for zabbix
-    apt install build-essential libmariadb-dev sudo libxml2-dev snmp libsnmp-dev libcurl4-openssl-dev php-gd php-xml php-bcmath php-mbstring vim libevent-dev libpcre3-d>    #apt update -y && apt upgrade -y
+    apt install build-essential libmariadb-dev sudo libxml2-dev snmp libsnmp-dev libcurl4-openssl-dev php-gd php-xml php-bcmath php-mbstring vim libevent-dev libpcre3-d -y
     sleep 1
+    version_os=$(lsb_release -sr)
     read -p "What version of Zabbix do you want to have ?(X.X):"  version
     wget https://repo.zabbix.com/zabbix/${version}/debian/pool/main/z/zabbix-release/zabbix-release_${version}-1+debian${version_os}_all.deb
     echo -e "Upload Zabbix $version on OS version $version_os"
